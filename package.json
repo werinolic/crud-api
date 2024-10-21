@@ -1,0 +1,37 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon --exec node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "start:prod": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werinolic/crud-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/werinolic/crud-api/issues"
+  },
+  "homepage": "https://github.com/werinolic/crud-api#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.13.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "uuid": "^10.0.0"
+  }
+}
