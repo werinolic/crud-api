@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
-import { User } from '../models/user';
-import users from '../utils/db';
+import { User } from '../models/user.js';
+import users from '../utils/db.js';
 
 export function getAllUsers(): User[] {
     return users;

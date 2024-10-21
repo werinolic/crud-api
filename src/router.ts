@@ -7,8 +7,8 @@ import {
     createUser,
     updateUser,
     deleteUser,
-} from './services/userService';
-import {httpMethods} from "./models/http";
+} from './services/userService.js';
+import {httpMethods} from "./models/http.js";
 
 const contentTypeHeader = { 'Content-Type': 'application/json' };
 

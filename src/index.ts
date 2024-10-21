@@ -1,6 +1,6 @@
 import http from 'node:http';
 import dotenv from 'dotenv';
-import { router } from './router';
+import { router } from './router.js';
 
 dotenv.config();
 

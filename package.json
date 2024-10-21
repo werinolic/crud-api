@@ -7,7 +7,7 @@
   "scripts": {
     "start:dev": "nodemon --exec node --loader ts-node/esm src/index.ts",
     "build": "tsc",
-    "start:prod": "npm run build && node dist/index.js"
+    "start:prod": "npm run build && node ./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/node": "^22.7.7",
     "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   },
   "dependencies": {
@@ -31,7 +32,6 @@
     "eslint": "^9.13.0",
     "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
-    "ts-node": "^10.9.2",
     "uuid": "^10.0.0"
   }
 }
